@@ -7,7 +7,7 @@
 
 #install stylegan
 #git clone https://github.com/dvschultz/stylegan
-cd stylegan
+#cd stylegan
 pip install -r requirements.txt
 
 #grab drive pkl and tfrecords files
