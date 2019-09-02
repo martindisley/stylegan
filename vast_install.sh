@@ -2,11 +2,11 @@
 #vast_install.sh
 
 #install git
-apt-get update
-apt-get install git --assume-yes
+#apt-get update
+#apt-get install git --assume-yes
 
 #install stylegan
-git clone https://github.com/dvschultz/stylegan
+#git clone https://github.com/dvschultz/stylegan
 cd stylegan
 pip install -r requirements.txt
 
@@ -24,31 +24,31 @@ cd datasets
 
 #.tfrecords files, uncomment as needed
 # mix-floral
-mkdir mix-floral
-cd mix-floral
-gdown --id 14jFtFk019b10nkSkkhTHn2FcgRWenmeU --output mix-floral-r02.tfrecords  #https://drive.google.com/open?id=14jFtFk019b10nkSkkhTHn2FcgRWenmeU
-gdown --id 10KW20z6gitCc6lfJCk_9nd_BxU_4IncL --output mix-floral-r03.tfrecords #https://drive.google.com/open?id=10KW20z6gitCc6lfJCk_9nd_BxU_4IncL
-gdown --id 1kwaCwUy-WZ8HvYndHB4YE8fez-_lvZbQ --output mix-floral-r04.tfrecords #https://drive.google.com/open?id=1kwaCwUy-WZ8HvYndHB4YE8fez-_lvZbQ
-gdown --id 1cNhiNGloNvNhgixPQk0zwis74MEO-vSD --output mix-floral-r05.tfrecords #5:https://drive.google.com/open?id=1cNhiNGloNvNhgixPQk0zwis74MEO-vSD
-gdown --id 1EXMdNb-RJbBL7CyuREu3z3toFWGLx8Jp --output mix-floral-r06.tfrecords #6:https://drive.google.com/open?id=1EXMdNb-RJbBL7CyuREu3z3toFWGLx8Jp
-gdown --id 1_fbthlXATI10jLlmq4JiDvztFhx91TBm --output mix-floral-r07.tfrecords #7:https://drive.google.com/open?id=1_fbthlXATI10jLlmq4JiDvztFhx91TBm
-gdown --id 1cHI8p_lre7N8C5lUJHWCG5tPzZZ5PWzx --output mix-floral-r08.tfrecords #8:https://drive.google.com/open?id=1cHI8p_lre7N8C5lUJHWCG5tPzZZ5PWzx
-gdown --id 1inYK6myNJgRQj6IwRRmiAF0b697i5A6r --output mix-floral-r09.tfrecords #9:https://drive.google.com/open?id=1inYK6myNJgRQj6IwRRmiAF0b697i5A6r
-gdown --id 1NsosGWU1Y-gPv_aOIxFRkbtYsiUluoR_ --output mix-floral-r10.tfrecords #10:https://drive.google.com/open?id=1NsosGWU1Y-gPv_aOIxFRkbtYsiUluoR_
-cd ../
+#mkdir mix-floral
+#cd mix-floral
+#gdown --id 14jFtFk019b10nkSkkhTHn2FcgRWenmeU --output mix-floral-r02.tfrecords  #https://drive.google.com/open?id=14jFtFk019b10nkSkkhTHn2FcgRWenmeU
+#gdown --id 10KW20z6gitCc6lfJCk_9nd_BxU_4IncL --output mix-floral-r03.tfrecords #https://drive.google.com/open?id=10KW20z6gitCc6lfJCk_9nd_BxU_4IncL
+#gdown --id 1kwaCwUy-WZ8HvYndHB4YE8fez-_lvZbQ --output mix-floral-r04.tfrecords #https://drive.google.com/open?id=1kwaCwUy-WZ8HvYndHB4YE8fez-_lvZbQ
+#gdown --id 1cNhiNGloNvNhgixPQk0zwis74MEO-vSD --output mix-floral-r05.tfrecords #5:https://drive.google.com/open?id=1cNhiNGloNvNhgixPQk0zwis74MEO-vSD
+#gdown --id 1EXMdNb-RJbBL7CyuREu3z3toFWGLx8Jp --output mix-floral-r06.tfrecords #6:https://drive.google.com/open?id=1EXMdNb-RJbBL7CyuREu3z3toFWGLx8Jp
+#gdown --id 1_fbthlXATI10jLlmq4JiDvztFhx91TBm --output mix-floral-r07.tfrecords #7:https://drive.google.com/open?id=1_fbthlXATI10jLlmq4JiDvztFhx91TBm
+#gdown --id 1cHI8p_lre7N8C5lUJHWCG5tPzZZ5PWzx --output mix-floral-r08.tfrecords #8:https://drive.google.com/open?id=1cHI8p_lre7N8C5lUJHWCG5tPzZZ5PWzx
+#gdown --id 1inYK6myNJgRQj6IwRRmiAF0b697i5A6r --output mix-floral-r09.tfrecords #9:https://drive.google.com/open?id=1inYK6myNJgRQj6IwRRmiAF0b697i5A6r
+#gdown --id 1NsosGWU1Y-gPv_aOIxFRkbtYsiUluoR_ --output mix-floral-r10.tfrecords #10:https://drive.google.com/open?id=1NsosGWU1Y-gPv_aOIxFRkbtYsiUluoR_
+#cd ../
 
 #ladiescrop
-mkdir ladiescrop
-cd ladiescrop
-gdown --id 1NdRdGxg987Oy9DXfp_arsWkQBXFdPrfX --output ladiescrop-r02.tfrecords
-gdown --id 1P_LgM7PcfI-C7x4hWfcZFMEg5YXdQAKt --output ladiescrop-r03.tfrecords
-gdown --id 1qQLCvEt238SbZAvhT7alYODBMG5zN6gt --output ladiescrop-r04.tfrecords
-gdown --id 1qckddZBfzGZW_Mjn-vtgeITEFduROQq7 --output ladiescrop-r05.tfrecords #https://drive.google.com/open?id=1qckddZBfzGZW_Mjn-vtgeITEFduROQq7
-gdown --id 1drQOC1nqJDnRocMBCPBo8gJ68AVp4XVa --output ladiescrop-r06.tfrecords
-gdown --id 1kXJ1XVRjdAhd8EHrL3P2qQefDOCQLYMO --output ladiescrop-r07.tfrecords
-gdown --id 1agDvpzYrBVNn6-Li81WGe25FkP5u3eBg --output ladiescrop-r08.tfrecords
-gdown --id 1Kqn_usexTH66uu70aqJlYYTFMIIGgowE --output ladiescrop-r09.tfrecords
-cd ../
+#mkdir ladiescrop
+#cd ladiescrop
+#gdown --id 1NdRdGxg987Oy9DXfp_arsWkQBXFdPrfX --output ladiescrop-r02.tfrecords
+#gdown --id 1P_LgM7PcfI-C7x4hWfcZFMEg5YXdQAKt --output ladiescrop-r03.tfrecords
+#gdown --id 1qQLCvEt238SbZAvhT7alYODBMG5zN6gt --output ladiescrop-r04.tfrecords
+#gdown --id 1qckddZBfzGZW_Mjn-vtgeITEFduROQq7 --output ladiescrop-r05.tfrecords #https://drive.google.com/open?id=1qckddZBfzGZW_Mjn-vtgeITEFduROQq7
+#gdown --id 1drQOC1nqJDnRocMBCPBo8gJ68AVp4XVa --output ladiescrop-r06.tfrecords
+#gdown --id 1kXJ1XVRjdAhd8EHrL3P2qQefDOCQLYMO --output ladiescrop-r07.tfrecords
+#gdown --id 1agDvpzYrBVNn6-Li81WGe25FkP5u3eBg --output ladiescrop-r08.tfrecords
+#gdown --id 1Kqn_usexTH66uu70aqJlYYTFMIIGgowE --output ladiescrop-r09.tfrecords
+#cd ../
 
 # curtis
 # mkdir curtis
