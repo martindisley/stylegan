@@ -73,3 +73,4 @@ gdown --id 1S-b0SDs5oA0gcvOabPq3CL2nFieBdwM9 --output w-r06.tfrecords
 gdown --id 1IO6KSUwXZl6AfgNwKJl9oesDyUUxco-B --output w-r07.tfrecords
 gdown --id 1usEUOykORDTj0VolBxr1MlRNP_egpwsD --output w-r08.tfrecords
 gdown --id 1huTQOqImhxaonwW-WxzrpezLwmq_k0AT --output w-r09.tfrecords
+cd ../
