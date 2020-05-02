@@ -18,6 +18,15 @@ import dnnlib
 
 import config
 from training import dataset
+#----------------------------------------------------------------------------
+# Function for checkpointing
+
+def pick_up_from_latest_snapshot():
+    networkSnapshots = glob.glob('/lustre/home/ic034/md2020/dvschultz/stylegan/results/*/*network-snapshot-*')
+    networkSnapshots.sort(key=os.path.getmtime, reverse=True)
+    latest_network_snapshot_path = str(networkSnapshots[0])
+    current_kimg = float(latest_network_snapshot_path[-10:-4])
+    return latest_network_snapshot_path, current_kimg
 
 #----------------------------------------------------------------------------
 # Convenience wrappers for pickle that are able to load data produced by
